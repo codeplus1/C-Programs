@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 class negative
 {
     int x;
@@ -7,9 +8,9 @@ class negative
     {
         x=a;
     }
-    void operator--()
+    void operator-()
     {
-        x = --x;
+        x = -x;
     }
     void display()
     {
@@ -18,9 +19,9 @@ class negative
 };
 int main()
 {
-    clrscr();
-    negative n(10);
-    --n;
+    
+    negative n(-10);
+    -n;
     n.display();
     return 0;
 }
