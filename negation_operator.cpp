@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 class negative
 {
     int x;
@@ -18,7 +19,6 @@ class negative
 };
 int main()
 {
-    clrscr();
     negative n(10);
     --n;
     n.display();
